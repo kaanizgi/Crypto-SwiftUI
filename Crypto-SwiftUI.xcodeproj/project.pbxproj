@@ -14,6 +14,9 @@
 		FFEA91E827F34A2D0030E053 /* Crypto_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA91E727F34A2D0030E053 /* Crypto_SwiftUITests.swift */; };
 		FFEA91F227F34A2D0030E053 /* Crypto_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA91F127F34A2D0030E053 /* Crypto_SwiftUIUITests.swift */; };
 		FFEA91F427F34A2D0030E053 /* Crypto_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA91F327F34A2D0030E053 /* Crypto_SwiftUIUITestsLaunchTests.swift */; };
+		FFEA920427F34B110030E053 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA920327F34B110030E053 /* CryptoCurrency.swift */; };
+		FFEA920727F34B620030E053 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA920627F34B620030E053 /* WebService.swift */; };
+		FFEA920927F34C270030E053 /* CryptoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEA920827F34C270030E053 /* CryptoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,10 @@
 		FFEA91ED27F34A2D0030E053 /* Crypto-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Crypto-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFEA91F127F34A2D0030E053 /* Crypto_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		FFEA91F327F34A2D0030E053 /* Crypto_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFEA920327F34B110030E053 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
+		FFEA920627F34B620030E053 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		FFEA920827F34C270030E053 /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
+		FFEA920A27F34F920030E053 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +101,12 @@
 		FFEA91D527F34A2C0030E053 /* Crypto-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				FFEA920A27F34F920030E053 /* Info.plist */,
+				FFEA920527F34B570030E053 /* Service */,
+				FFEA920227F34ADB0030E053 /* ViewModel */,
+				FFEA920127F34AD60030E053 /* View */,
+				FFEA920027F34AD10030E053 /* Model */,
 				FFEA91D627F34A2C0030E053 /* Crypto_SwiftUIApp.swift */,
-				FFEA91D827F34A2C0030E053 /* ContentView.swift */,
 				FFEA91DA27F34A2D0030E053 /* Assets.xcassets */,
 				FFEA91DC27F34A2D0030E053 /* Preview Content */,
 			);
@@ -125,6 +136,38 @@
 				FFEA91F327F34A2D0030E053 /* Crypto_SwiftUIUITestsLaunchTests.swift */,
 			);
 			path = "Crypto-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+		FFEA920027F34AD10030E053 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFEA920327F34B110030E053 /* CryptoCurrency.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFEA920127F34AD60030E053 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFEA91D827F34A2C0030E053 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFEA920227F34ADB0030E053 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FFEA920827F34C270030E053 /* CryptoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFEA920527F34B570030E053 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FFEA920627F34B620030E053 /* WebService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +301,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFEA91D927F34A2C0030E053 /* ContentView.swift in Sources */,
+				FFEA920427F34B110030E053 /* CryptoCurrency.swift in Sources */,
+				FFEA920727F34B620030E053 /* WebService.swift in Sources */,
 				FFEA91D727F34A2C0030E053 /* Crypto_SwiftUIApp.swift in Sources */,
+				FFEA920927F34C270030E053 /* CryptoViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +466,7 @@
 				DEVELOPMENT_TEAM = M9MHSW8NNM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Crypto-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +496,7 @@
 				DEVELOPMENT_TEAM = M9MHSW8NNM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Crypto-SwiftUI/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
